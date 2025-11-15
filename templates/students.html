@@ -1,0 +1,20 @@
+<html>
+<body>
+<h1>Информация о студенте</h1>
+<p>Имя: {{ student.first_name }}</p>
+<p>Фамилия: {{ student.last_name }}</p>
+<p>Номер студенческой карты: {{ student.student_id }}</p>
+<p>Email: {{ student.email }}</p>
+
+<h2>Группа</h2>
+<p>Номер группы: {{ student.group.group_number }}</p>
+<p>Гасло: {{ student.group.motto }}</p>
+<p>Кабинет: {{ student.group.room }}</p>
+
+<h2>Библиотечная карта</h2>
+<p>ID карты: {{ student.library_card.card_id }}</p>
+<p>Дата выдачи: {{ student.library_card.issue_date }}</p>
+<p>Дата окончания: {{ student.library_card.expire_date }}</p>
+<p>Цена: {{ student.library_card.price }}</p>
+</body>
+</html>
